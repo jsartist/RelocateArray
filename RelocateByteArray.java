@@ -50,16 +50,14 @@ public class RelocateByteArray {
 		for( int k = 0; k < 387450; k++) { 
 			if( flag % 3 == 0) {
 				this.relocateArray[k] = this.b[b++];
-				flag++;
 			}
 			else if( flag % 3 == 1) {
 				this.relocateArray[k] = this.g[g++];
-				flag++;
 			}
 			else {
 				this.relocateArray[k] = this.r[r++];
-				flag++;
 			}
+			flag++;
 		}
 	}
 	
